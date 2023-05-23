@@ -2,6 +2,7 @@ run:
 	python pwgen.py
 
 install:
+	pip install --upgrade pip
 	pip install random
 
 test:
