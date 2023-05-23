@@ -6,8 +6,13 @@ digits = "0123456789"
 symbols = "(){}[]<>.,/|@!#$%^&*"
 LokLik = "l|I10Oo8B"
 
-com=input()
-
+try:
+    com=input()
+except EOFError:
+    com="pwgen"
+    print("Exception handled")
+    
+    
 def strsub(str1,str2):
     for i in range(0,len(str2)-1,+1):
         str1=str1.replace(str2[i],'')
@@ -104,7 +109,10 @@ def aloud(upr, lwr, dgt, smb, amb):
 def gen(use,lent):
     pas=""
     for i in range(0,lent,+1):
-        pas+=use[random.randint(0,len(use)-1)]
+        try:
+            pas+=use[random.randint(0,len(use)-1)]
+        except:
+            pas+=' '
     return pas
 
 upr, lwr, dgt, smb, amb, col = True, True, True, True, False, False
