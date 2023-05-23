@@ -25,7 +25,8 @@ jobs:
       - name: Install smth
         run: |
           make -f makefile.NMK install
-      - name: Install smth
+          
+      - name: Test smth
         run: |
           make -f makefile.NMK test
           
