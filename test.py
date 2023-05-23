@@ -122,6 +122,7 @@ tests=[" ","pwgen qigurfhfehquw","pwgen -aAS0 -10 -10","pwgen - -0 -","pwgen ---
 
 for l in range(0,5,+1):
 	com=tests[l]
+	print(com)
 	if com[:5]=="pwgen":
 		pases=[]
 		i1,i2,i3=divide(com)
