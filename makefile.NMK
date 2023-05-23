@@ -1,0 +1,8 @@
+run:
+	python pwgen.py
+
+install:
+	pip install random
+
+test:
+	python test.py
