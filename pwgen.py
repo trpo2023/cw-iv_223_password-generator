@@ -109,7 +109,10 @@ def aloud(upr, lwr, dgt, smb, amb):
 def gen(use,lent):
     pas=""
     for i in range(0,lent,+1):
-        pas+=use[random.randint(0,len(use)-1)]
+        try:
+            pas+=use[random.randint(0,len(use)-1)]
+        except:
+            pas+=' '
     return pas
 
 upr, lwr, dgt, smb, amb, col = True, True, True, True, False, False
