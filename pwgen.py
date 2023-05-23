@@ -128,3 +128,6 @@ if com[:5]=="pwgen":
 
 else:
     print(0)
+    
+except EOFError:
+    print("Exception handled")
