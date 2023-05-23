@@ -6,8 +6,13 @@ digits = "0123456789"
 symbols = "(){}[]<>.,/|@!#$%^&*"
 LokLik = "l|I10Oo8B"
 
-com=input()
-
+try:
+    com=input()
+except EOFError:
+    com="pwgen"
+    print("Exception handled")
+    
+    
 def strsub(str1,str2):
     for i in range(0,len(str2)-1,+1):
         str1=str1.replace(str2[i],'')
@@ -128,6 +133,3 @@ if com[:5]=="pwgen":
 
 else:
     print(0)
-    
-except EOFError:
-    print("Exception handled")
