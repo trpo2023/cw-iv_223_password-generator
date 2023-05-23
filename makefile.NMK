@@ -3,7 +3,6 @@ run:
 
 install:
 	pip install --upgrade pip
-	pip install random
 
 test:
 	python test.py
