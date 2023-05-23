@@ -121,8 +121,7 @@ arg, lenth, numb="",10,50
 tests=[" ","pwgen qigurfhfehquw","pwgen -aAS0 -10 -10","pwgen - -0 -","pwgen ---0"]
 
 for l in tests:
-com=tests[l]
-	
+com=l
 	if com[:5]=="pwgen":
 		pases=[]
 		i1,i2,i3=divide(com)
