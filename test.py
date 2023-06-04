@@ -27,5 +27,5 @@ for l in range(0,5,+1):
 		
 		else:
 			print(0)
-	except:
+	expect:
 		print("Test ", l , "failed succesfully")
