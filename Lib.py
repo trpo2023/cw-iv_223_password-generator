@@ -4,7 +4,7 @@ digits = "0123456789"
 symbols = "(){}[]<>.,/|@!#$%^&*"
 LokLik = "l|I10Oo8B"
 
-def StrSub(str1,str2):
+def strsub(str1,str2):
     for i in range(0,len(str2)-1,+1):
         str1=str1.replace(str2[i],'')
     return str1
