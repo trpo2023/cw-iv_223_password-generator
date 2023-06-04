@@ -29,7 +29,3 @@ jobs:
       - name: Test smth
         run: |
           make -f makefile.NMK test
-          
-      - name: Run prog
-        run: |
-          make -f makefile.NMK run
