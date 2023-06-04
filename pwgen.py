@@ -12,12 +12,12 @@ arg, lenth, numb="",10,50
 
 if com[:5]=="pwgen":
     pases=[]
-    i1,i2,i3=divide(com)
-    arg,lenth,numb = args(com,i1,i2,i3)
-    upr, lwr, dgt, smb, amb, col = restr(arg, upr, lwr, dgt, smb, amb, col)
-    useable = aloud(upr, lwr, dgt, smb, amb)
+    i1,i2,i3=Lib.divide(com)
+    arg,lenth,numb = Lib.args(com,i1,i2,i3)
+    upr, lwr, dgt, smb, amb, col = Lib.restr(arg, upr, lwr, dgt, smb, amb, col)
+    useable = Lib.aloud(upr, lwr, dgt, smb, amb)
     for i in range(0,numb+10,+1):
-        pases.append(gen(useable,lenth))
+        pases.append(Lib.gen(useable,lenth))
     
     if col:
         for i in range(0,numb,+5):
